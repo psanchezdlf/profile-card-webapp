@@ -1,0 +1,165 @@
+<section class="editor">
+  <!-- DISEÑA -->
+  <article class="design__article">
+    <div class="article__label js_designHide">
+      <i class="fa-solid fa-face-smile-beam design-icon"></i>
+      <h2 class="article__title">DISEÑA</h2>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <div class="article__content js_colorArticle">
+      <p class="design__label">COLORES</p>
+
+      <div class="design__palettes">
+        <!-- Paleta 1 -->
+        <label class="palette-option">
+          <input type="radio" name="palette" value="1" />
+          <img
+            src="./images/paleta-1.png"
+            alt="Paleta rosada"
+            class="palette-img"
+          />
+        </label>
+
+        <!-- Paleta 2 -->
+        <label class="palette-option">
+          <input type="radio" name="palette" value="2" />
+          <img
+            src="./images/paleta-2.png"
+            alt="Paleta Adalab"
+            class="palette-img"
+          />
+        </label>
+
+        <!-- Paleta 3 -->
+        <label class="palette-option">
+          <input type="radio" name="palette" value="3" />
+          <img
+            src="./images/paleta-3.png"
+            alt="Paleta morado lima"
+            class="palette-img"
+          />
+        </label>
+      </div>
+    </div>
+  </article>
+
+  <!-- RELLENA -->
+  <article class="fill__article">
+    <div class="article__label js_fillHide">
+      <i class="fa-solid fa-pencil design-icon"></i>
+      <h2 class="article__title">RELLENA</h2>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="article__content js_fillArticle collapsed">
+      <p class="required-note">* Campos obligatorios</p>
+      <form class="profile-form js_profileForm" id="profile-form">
+        <label for="name">Nombre completo<span class="required">*</span></label>
+
+        <input
+          type="text"
+          class="js_nameInput"
+          id="name"
+          placeholder="Ej: Sally Jill"
+          required
+        />
+
+        <label for="job">Puesto<span class="required">*</span></label>
+        <input
+          type="text"
+          class="js_jobInput"
+          id="job"
+          placeholder="Ej: Front-end unicorn"
+          required
+        />
+
+        <label for="photo">Imagen de perfil</label>
+        <small class="image__upload-info">
+          <i class="fa-solid fa-paperclip"></i> Adjunta abajo tu foto. Te
+          recomendamos que no pese más de 25KB.
+        </small>
+        <div class="image-upload">
+          <label for="photo" class="image-btn">Añadir imagen</label>
+
+          <input
+            type="file"
+            class="js_photoInput collapsed image-input js__profile-upload-btn"
+            id="photo"
+          />
+          <div class="image-preview js__profile-preview"></div>
+        </div>
+
+        <label for="phone">Teléfono<span class="required">*</span></label>
+        <input
+          type="tel"
+          class="js_phoneInput"
+          id="phone"
+          placeholder="Ej: 555-55-55"
+        />
+
+        <label for="email"
+          >Correo electrónico<span class="required">*</span></label
+        >
+        <input
+          type="email"
+          class="js_emailInput"
+          id="email"
+          placeholder="Ej: sally.hill@gmail.com"
+          required
+        />
+
+        <label for="linkedin">LinkedIn</label>
+        <input
+          class="js_linkedIn"
+          type="url"
+          id="linkedin"
+          placeholder="Ej: linkedin.com/in/sally-hill"
+        />
+
+        <label for="github">GitHub</label>
+        <input
+          class="js_gitHub"
+          type="url"
+          id="github"
+          placeholder="Ej: @sally-hill"
+        />
+      </form>
+    </div>
+  </article>
+
+  <!-- COMPARTE -->
+  <article class="share__article">
+    <div class="article__label js_shareHide">
+      <i class="fa-solid fa-heart design-icon"></i>
+      <h2 class="article__title">COMPARTE</h2>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="article__content js_shareArticle collapsed">
+      <div class="create-card">
+        <button class="share__button js_shareBtn">
+          <i class="fa-regular fa-address-card"></i> CREAR TARJETA
+        </button>
+      </div>
+      <div class="share__result js_shareSuccessBox collapsed">
+        <p>La tarjeta ha sido creada:</p>
+        <a href="#" class="share__link js_shareLink"
+          >https://awesome-profile-card.com?id=A456DF0001</a
+        >
+        <a href="#" class="share__twitter js_shareInTwitterLink">
+          <i class="fa-brands fa-twitter"></i> Compartir en Twitter
+        </a>
+      </div>
+      <div class="share__fail-box js_shareFailBox collapsed">
+        <div class="share__fail-main">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p>No se pudo crear la tarjeta.</p>
+        </div>
+
+        <p class="share__fail-info">
+          Por favor, revisa que todos los campos obligatorios estén completos
+          antes de intentarlo de nuevo.
+        </p>
+      </div>
+    </div>
+  </article>
+</section>

@@ -1,0 +1,52 @@
+/*MOVIL*/
+.header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
+.top-image{
+  width:100%;
+  max-width:270px;
+  height:auto;
+  display:block;
+  margin:20px auto 6px;
+}
+
+
+
+/* TABLET */
+@media (min-width: 768px) {
+    .landing .header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 40px;
+
+    
+  }
+  .header {
+    display: flex;
+    justify-content: flex-start; /* coloca el contenido a la izquierda */
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .top-image {
+    max-width: 290px;
+    margin: 20px 0 6px 0; /* quita el auto centrado */
+  }
+}
+
+/*DESKTOP */
+@media (min-width: 1024px) {
+  .header {
+    display:flex;
+    align-items: start;
+    margin-left: 40px;
+  }
+
+  .top-image {
+    max-width: 290px;
+  }
+}

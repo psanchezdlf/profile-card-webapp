@@ -1,0 +1,101 @@
+h1{
+  margin:0;
+  font-size:32px;
+  line-height:1.2;
+  letter-spacing:-0.015em;
+  color: var(--accent);
+}
+p{
+  margin:10px auto 0;
+  line-height:1.6;
+  font-size:18px;
+  color: var(--text2);
+  max-width:30ch;
+}
+
+/* FEATURES (3 iconos con FA) */
+.features{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:14px;
+  padding:0;
+  margin:36px 0 24px;
+  background: transparent;
+  border:0;
+  border-radius:16px;
+  box-shadow: none;
+}
+.feature-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+  padding:10px 6px;
+  font-weight:600;
+  color: var(--text);
+  background: #f3e9fc;
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+.feature-icon{
+  font-size:36px;         /* tamaño del icono FA */
+  line-height:1;
+  color:var(--accent);     /* color del icono */
+  transition: transform 0.18s ease;
+}
+
+.feature-item:hover .feature-icon{
+  transform: translateY(-2px) scale(1.03);
+}
+.feature-label{
+  font-size:14px;
+}
+
+/* Botón/enlace */
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  font-weight:700;
+  font-size:18px;
+  color:black;
+  background:var(--btn);
+  border: 1px solid var(--btn-border);
+  border-radius:999px;
+  cursor:pointer;
+  text-decoration:none;
+  margin-top: 22px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+.btn:hover{
+  background:var(--btn-hover);
+  transform: translateY(-1px);
+}
+.btn:focus-visible{
+  outline: 3px solid rgba(124, 58, 237, 0.25);
+  outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+  h1{
+    font-size:36px;
+  }
+  p{
+    font-size:19px;
+  }
+}
+
+@media (max-width: 520px) {
+  .features{
+    grid-template-columns: 1fr;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 28px 0 24px;
+  }
+
+  .feature-item{
+    background: #f3e9fc;
+    border: 1px solid var(--border);
+    box-shadow: none;
+  }
+}

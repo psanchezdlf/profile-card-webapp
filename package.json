@@ -1,0 +1,30 @@
+{
+	"name": "profile-card-webapp",
+	"version": "1.0.0",
+	"description": "App web para crear y compartir tarjetas digitales personalizadas.",
+	"type": "module",
+	"devDependencies": {
+		"@vituum/vite-plugin-concat": "^1.1.1",
+		"sass": "^1.83.4",
+		"sharp": "^0.34.4",
+		"vite": "^7.1.9",
+		"vite-plugin-html-inject": "^1.1.2",
+		"vite-plugin-image-optimizer": "^1.1.7"
+	},
+	"scripts": {
+		"start": "vite",
+		"dev": "vite",
+		"build": "vite build --emptyOutDir",
+		"docs": "vite build --emptyOutDir",
+		"preview": "vite preview",
+		"push-docs": "npm run deploy",
+		"deploy": "vite build --emptyOutDir && git add docs && git commit -m 'Deployed new version of the page to production' && git push"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/USERNAME/REPO.git"
+	},
+	"author": "Equipo 1 - Adalab",
+	"license": "MIT",
+	"homepage": "https://USERNAME.github.io/REPO/"
+}

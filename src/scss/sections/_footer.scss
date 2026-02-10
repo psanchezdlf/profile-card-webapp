@@ -1,0 +1,35 @@
+
+.footer-landing {
+  margin-top: auto;
+  min-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #fff;
+  background-color: var(--bg2);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-title {
+  font-weight: 600;
+}
+
+.footer-subtitle {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px; /* separa un poco el texto del corazón */
+}
+
+.footer-icon {
+  color: #e63946; /* color rojo para el corazón */
+}

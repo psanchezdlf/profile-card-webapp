@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%; /*Asegura que el body pueda calcular bien alturas relativas.*/
+  margin:0;
+  font-family: var(--main-font);
+  color:var(--text);
+  background:var(--bg);
+  background-image: url(/images/background-pattern.png);
+  display: flex;  /* display:flex + flex-direction:column: el body apila header → main → footer en columna. */           
+  flex-direction: column;    
+  min-height: 100svh;     /* hace que el body siempre tenga al menos la altura de la ventana. */
+}
+
+.main{
+  max-width:520px;
+  margin:0 auto;
+  padding: 96px 18px 48px;
+  text-align:center;
+  flex: 1 0 auto;            /* ocupa el espacio disponible, si el contenido es pequeño, 
+                            el main se estira y empuja el footer hacia abajo. */
+}
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 680px;
+    padding-top: 112px;
+  }
+}
