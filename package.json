@@ -20,11 +20,11 @@
 		"push-docs": "npm run deploy",
 		"deploy": "vite build --emptyOutDir && git add docs && git commit -m 'Deployed new version of the page to production' && git push"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/USERNAME/REPO.git"
-	},
 	"author": "Equipo 1 - Adalab",
 	"license": "MIT",
-	"homepage": "https://USERNAME.github.io/REPO/"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/psanchezdlf/profile-card-webapp.git"
+	},
+	"homepage": "https://psanchezdlf.github.io/profile-card-webapp/"
 }

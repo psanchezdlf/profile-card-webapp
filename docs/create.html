@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crea tu tarjeta digital</title>
+    <meta
+      name="description"
+      content="Disena tu tarjeta digital, rellena tus datos y comparte el enlace."
+    />
+    <meta property="og:title" content="Awesome Profile Cards" />
+    <meta
+      property="og:description"
+      content="Disena tu tarjeta digital, completa tus datos y comparte el enlace."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/og-image.png" />
+    <meta property="og:url" content="https://USERNAME.github.io/REPO/" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/profile-card-webapp/images/favicon-awesome-cards.png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" crossorigin href="/profile-card-webapp/assets/main-DpsKTexc.css">
+  </head>
+  <body>
+    <header class="header">
+  <a href="./index.html">
+    <!-- Imagen superior/logo -->
+    <img
+      class="top-image"
+      src="./images/new-logo-2.png"
+      alt="Logo de Awesome Cards"
+    />
+  </a>
+</header>
+
+    <main class="main__section">
+      <section class="editor">
+  <!-- DISEÑA -->
+  <article class="design__article">
+    <div class="article__label js_designHide">
+      <i class="fa-solid fa-face-smile-beam design-icon"></i>
+      <h2 class="article__title">DISEÑA</h2>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <div class="article__content js_colorArticle">
+      <p class="design__label">COLORES</p>
+
+      <div class="design__palettes">
+        <!-- Paleta 1 -->
+        <label class="palette-option">
+          <input type="radio" name="palette" value="1" />
+          <img
+            src="./images/paleta-1.png"
+            alt="Paleta rosada"
+            class="palette-img"
+          />
+        </label>
+
+        <!-- Paleta 2 -->
+        <label class="palette-option">
+          <input type="radio" name="palette" value="2" />
+          <img
+            src="./images/paleta-2.png"
+            alt="Paleta Adalab"
+            class="palette-img"
+          />
+        </label>
+
+        <!-- Paleta 3 -->
+        <label class="palette-option">
+          <input type="radio" name="palette" value="3" />
+          <img
+            src="./images/paleta-3.png"
+            alt="Paleta morado lima"
+            class="palette-img"
+          />
+        </label>
+      </div>
+    </div>
+  </article>
+
+  <!-- RELLENA -->
+  <article class="fill__article">
+    <div class="article__label js_fillHide">
+      <i class="fa-solid fa-pencil design-icon"></i>
+      <h2 class="article__title">RELLENA</h2>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="article__content js_fillArticle collapsed">
+      <p class="required-note">* Campos obligatorios</p>
+      <form class="profile-form js_profileForm" id="profile-form">
+        <label for="name">Nombre completo<span class="required">*</span></label>
+
+        <input
+          type="text"
+          class="js_nameInput"
+          id="name"
+          placeholder="Ej: Sally Jill"
+          required
+        />
+
+        <label for="job">Puesto<span class="required">*</span></label>
+        <input
+          type="text"
+          class="js_jobInput"
+          id="job"
+          placeholder="Ej: Front-end unicorn"
+          required
+        />
+
+        <label for="photo">Imagen de perfil</label>
+        <small class="image__upload-info">
+          <i class="fa-solid fa-paperclip"></i> Adjunta abajo tu foto. Te
+          recomendamos que no pese más de 25KB.
+        </small>
+        <div class="image-upload">
+          <label for="photo" class="image-btn">Añadir imagen</label>
+
+          <input
+            type="file"
+            class="js_photoInput collapsed image-input js__profile-upload-btn"
+            id="photo"
+          />
+          <div class="image-preview js__profile-preview"></div>
+        </div>
+
+        <label for="phone">Teléfono<span class="required">*</span></label>
+        <input
+          type="tel"
+          class="js_phoneInput"
+          id="phone"
+          placeholder="Ej: 555-55-55"
+        />
+
+        <label for="email"
+          >Correo electrónico<span class="required">*</span></label
+        >
+        <input
+          type="email"
+          class="js_emailInput"
+          id="email"
+          placeholder="Ej: sally.hill@gmail.com"
+          required
+        />
+
+        <label for="linkedin">LinkedIn</label>
+        <input
+          class="js_linkedIn"
+          type="url"
+          id="linkedin"
+          placeholder="Ej: linkedin.com/in/sally-hill"
+        />
+
+        <label for="github">GitHub</label>
+        <input
+          class="js_gitHub"
+          type="url"
+          id="github"
+          placeholder="Ej: @sally-hill"
+        />
+      </form>
+    </div>
+  </article>
+
+  <!-- COMPARTE -->
+  <article class="share__article">
+    <div class="article__label js_shareHide">
+      <i class="fa-solid fa-heart design-icon"></i>
+      <h2 class="article__title">COMPARTE</h2>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="article__content js_shareArticle collapsed">
+      <div class="create-card">
+        <button class="share__button js_shareBtn">
+          <i class="fa-regular fa-address-card"></i> CREAR TARJETA
+        </button>
+      </div>
+      <div class="share__result js_shareSuccessBox collapsed">
+        <p>La tarjeta ha sido creada:</p>
+        <a href="#" class="share__link js_shareLink"
+          >https://awesome-profile-card.com?id=A456DF0001</a
+        >
+        <a href="#" class="share__twitter js_shareInTwitterLink">
+          <i class="fa-brands fa-twitter"></i> Compartir en Twitter
+        </a>
+      </div>
+      <div class="share__fail-box js_shareFailBox collapsed">
+        <div class="share__fail-main">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p>No se pudo crear la tarjeta.</p>
+        </div>
+
+        <p class="share__fail-info">
+          Por favor, revisa que todos los campos obligatorios estén completos
+          antes de intentarlo de nuevo.
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
+
+      <!-- Sofi-->
+      <section class="preview">
+  <button class="reset-btn js_resetBtn">
+    <i class="fas fa-trash"></i> RESET
+  </button>
+  <div class="profile-card js_cardPreview">
+    <div class="card-header">
+      <h2 class="nombre">Nombre Apellido</h2>
+      <p class="rol">Front-end developer</p>
+    </div>
+    <div class="photo-container js__profile-image">
+      <img
+        src="images/tech-girl-profile-photo-example.jpg"
+        alt="Foto de perfil"
+        class="profile-img"
+      />
+    </div>
+    <div class="icons">
+      <a href="#"><i class="fas fa-mobile-alt"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+
+      <!-- Jenny-->
+    </main>
+    <!-- Maria Jose-->
+<footer class="footer-landing">
+  <div class="footer-content">
+    <span class="footer-title">© 2025 Awesome profile cards.</span>
+    <span class="footer-subtitle">
+      Hecho con <i class="fa-solid fa-heart footer-icon"></i>
+    </span>
+  </div>
+</footer>
+
+    <!-- Maria Jose-->
+    <script src="./js/main.js"></script>
+    <script src="./js/get-avatar.js"></script>
+  </body>
+</html>

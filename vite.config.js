@@ -31,7 +31,7 @@ const inputFilesList = {
 }
 
 export default defineConfig({
-  base: "./",
+  base: "/profile-card-webapp/",
   root: "src",
   publicDir: "../public",
   build: {
